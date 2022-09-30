@@ -1,0 +1,40 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+  .button {
+    margin-left: auto;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    color: white;
+    transition: width 0.3s ease-out;
+  }
+  .button:hover {
+    width: 250px;
+  }
+  .blog {
+    background-color: #e17b77;
+  }
+  .twitter {
+    background-color: #00aced;
+  }
+  .linkedin {
+    background-color: #007bb6;
+  }
+  .facebook {
+    background-color: #3b5998;
+  }
+  .github {
+    background-color: #333;
+  }
+  i {
+    font-size: 25px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
+}

@@ -1,0 +1,137 @@
+body {
+  background-color: #c3cfe2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.testimonial {
+  margin: auto;
+  width: 600px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px 0px #888888;
+  margin-top: 25px;
+}
+.testimonial .content {
+  padding: 30px;
+}
+.testimonial .content p {
+  margin: 0;
+  font-size: 20pt;
+  color: #444444;
+  line-height: 1.8;
+}
+.testimonial .footer {
+  margin-top: 100px;
+  padding-bottom: 40px;
+  background-color: #686de0;
+  text-align: center;
+}
+.testimonial .footer img {
+  margin-top: -110px;
+  border: 10px solid white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.testimonial .footer h1 {
+  color: white;
+}
+.testimonial .footer h2 {
+  color: white;
+  opacity: 0.5;
+}
+
+.grid {
+  margin: auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+.grid .item {
+  position: relative;
+  background-color: rgb(80, 80, 120);
+  line-height: 0;
+}
+.grid .item img {
+  max-height: 100%;
+  max-width: 100%;
+  transition-duration: 0.5s;
+}
+.grid .item button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-weight: bold;
+  border-radius: 0%;
+  padding: 10px;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.grid .item:hover img {
+  opacity: 0;
+}
+.grid .item:hover button {
+  opacity: 100%;
+}
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1060px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+.social-media .button {
+  margin-left: auto;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  color: white;
+  transition: width 0.3s ease-out;
+}
+.social-media .button:hover {
+  width: 250px;
+}
+.social-media .blog {
+  background-color: #e17b77;
+}
+.social-media .twitter {
+  background-color: #00aced;
+}
+.social-media .linkedin {
+  background-color: #007bb6;
+}
+.social-media .facebook {
+  background-color: #3b5998;
+}
+.social-media .github {
+  background-color: #333;
+}
+.social-media i {
+  font-size: 25px;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+.social-media a {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
